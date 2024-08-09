@@ -1,0 +1,334 @@
+/* j'utilise le selecteur universel pour supprimer la marge par defaut */
+* {
+    margin: 0;
+    font-family: "Kufam", sans-serif;
+}
+
+
+
+/* j'utilise le display:flex pour center le logo dans le
+ header et un padding de 5 px pour un leger espace entre le haut et le bas */
+header h1 {
+    background-color: #FAE5D1;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0px 5px 0px;
+}
+
+/* avec le padding 0, on enleve tout espace à gauche
+et à droite. avec le  list-style-type : none; on enleve les 
+points des listes et le justify content space between on les espace commme cela*/
+nav ul {
+    padding: 0;
+    margin: 0px 50px 0px 50px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* pour gagner du temps, je prefere ecrire de cette maniere 
+pour selectionner des éléments.
+De ce fait, j'arrondis les angles du bas des elements de la liste de la nav */
+nav ul li {
+    background-color: #1E1E1E;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+/* je supprime la couleur bleu et le souligné des liens */
+nav ul li a {
+    text-decoration: none;
+    color: #FDE8D4;
+}
+
+/* Il y a 2 sections, et donc je  */
+Section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* c'est ici que les sections prenent forme  */
+article {
+    width: 20%;
+    background-color: #FAE5D1;
+    border-radius: 20px;
+    border: dashed #AC7961;
+    margin: 80px 0px;
+
+}
+
+/* je reduis les tailles des img */
+article img {
+    width: 85%;
+    border-radius: 10px;
+
+}
+
+/* le firstdiv sert simplement à centrer l'image */
+.firstDiv {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+
+}
+
+/* paraillement ici, sert à centrer le mini-titre et modifier 
+qql element en plus. */
+.firstP {
+    font-size: 18px;
+    text-align: center;
+    margin: 15px;
+    flex-wrap: nowrap;
+    font-weight: 500;
+
+}
+
+/* je reduis la taille du petit indicateur de la quantité 
+du produit */
+.firstP span {
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+/* centrer le texte */
+.secondP {
+    text-align: center;
+    margin: 0px 15px 0px 15px;
+    font-weight: 500;
+}
+
+
+/* regler la disposition des etoiles */
+.secondDiv {
+    margin: 30px;
+    color: #AC7961;
+    margin-left: 30px;
+}
+
+
+/* donc ici pour le bouton d'achat,
+il y avait plusieur chose à faire comme la 
+couleur du fond, le padding et margin, la taille des 
+differents textes ect.*/
+.thirdDiv {
+    background-color: #1E1E1E;
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 40px;
+    margin: 0px 10%;
+    display: flex;
+    color: #FAE5D1;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* tout se passe ici pour le bouton. */
+
+.thirdDiv p {
+    /* je recherchais ici la precision et cela
+    me paraissait plus proche de la maquette avec 
+    ces % */
+    padding: 0% 2% 0% 3%;
+}
+
+.thirdDiv i {
+    /* ici aussi  */
+    padding: 0% 3% 0% 3%;
+
+}
+
+.barre {
+    /*  avec text-decoration: line-through; on barre un texte*/
+    text-decoration: line-through;
+    font-size: 18px;
+    padding-top: 5px !important;
+
+}
+
+.price {
+    /* j'augmente la taille du prix */
+    font-size: larger;
+}
+
+
+.TTC {
+    /*  et là, je l'a reduis */
+    font-size: 15px;
+    padding-top: 10px;
+    padding-top: 5px !important;
+
+}
+
+
+.buttonbuy {
+    /* j'ai rajouté des lien hypertexte pour les bouton 
+    donc j'enleve la decoration par defaut */
+    padding-bottom: 15px;
+    text-decoration: none;
+}
+
+.buttonbuy a {
+    text-decoration: none;
+}
+
+/* jusqu'a là */
+
+
+
+/* dans le footer, j'aligne mes elements avec le  
+display flex ainsi, je peux les eloigner avec le space 
+between */
+.DivFooterGenerale {
+    color: #FAE5D1;
+    background-color: #AC7961;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+footer a {
+    color: #FAE5D1;
+    /* ici je change la couleur des liens */
+}
+
+footer li {
+    padding: 10px;
+    /* j'espace les elements de la liste */
+}
+
+footer img {
+    width: 80px;
+    border-radius: 10px;
+    /* je change la taille et j'arrondie la bordure de mon image */
+}
+
+.divFooterImg {
+    /* pour placer l'image entre le background de couleur
+    marron et le vide, j'utilise le position relative 
+    avec le top 40px et le left0px. On le retrouve bien
+    au centre entre le fond et le vide */
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+    left: 0px;
+
+}
+
+
+.reseau p {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+
+/* j'aligne le "nous suivre" au centre de là où il se trouce
+avec les petits logos */
+.reseau,
+.reseau i {
+    text-align: center;
+    padding: 30px;
+
+}
+
+
+/* enfin, je pousse le copyright en bas a droite */
+.copyright {
+    display: flex;
+    justify-content: end;
+    background-color: #AC7961;
+    color: #FAE5D1;
+    position: relative;
+    padding: 0px 70px 20px 0px;
+    font-size: 20px;
+}
+
+
+
+/* je pouvais faire directement un media vers la 
+version telephone mais c'était trop brusque.
+donc j'ai adoucie ça par une version plus grande  */
+@media screen and (max-width: 1024px) {
+
+    article {
+        /* j'augement la taille des articles */
+        width: 80% !important;
+        margin: 30px;
+    }
+
+    .reseau i {
+        /* ainsi que la taille des logos du footer */
+        padding: 15px !important;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    /* je mets la nav en colonne et je centre les liens  */
+    nav ul {
+        display: block !important;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* le border radius 0 pour ne plus arrondir les angles */
+    nav ul li {
+        border-radius: 0px;
+    }
+
+
+    Section {
+        /* je force les section pour devenir des blocks
+    pour les mettres les uns au dessus des autres */
+        display: block;
+        margin-left: 4%;
+
+    }
+
+    article {
+        /* le !important m'assure que cela fonctionne.
+        ici j'augmente la taille des articles et 
+        j'espace le rendu */
+        width: 95% !important;
+        margin: 0 !important;
+        margin-top: 100px !important;
+    }
+
+    /* j'augmente la marge du haut 
+    pour avoir de l'espace entre l'image et l'article */
+    .divFooterImg {
+        margin-top: 60px;
+
+
+    }
+
+    /* pour centrer le la liste du bas j'utilise un align-items center
+     et un display block pour les mettres les uns au dessus des
+     autres*/
+    .DivFooterGenerale {
+        display: block !important;
+    }
+
+    /* ici  je centre*/
+    .responsiveFooter ul li,
+    .responsiveFooter p {
+        display: flex !important;
+        justify-content: center;
+
+    }
+
+    /*  je centre le copyright */
+    .copyright {
+        justify-content: center !important;
+    }
+
+}
